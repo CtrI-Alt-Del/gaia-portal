@@ -9,7 +9,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
@@ -27,7 +28,10 @@
     "vite": "^7.1.12"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
     "astro-vtbot": "^2.1.9",
+    "husky": "^9.1.7",
     "tailwindcss": "^4.1.16",
     "typescript": "^5.9.3"
   },
