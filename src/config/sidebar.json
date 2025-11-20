@@ -1,0 +1,19 @@
+{
+  "main": [
+    {
+      "label": "Guia inicial",
+      "translations": {
+        "fr": "Commencer"
+      },
+      "items": [
+        {
+          "label": "[seti:vite] Visão geral do Gaia",
+          "translations": {
+            "fr": "[seti:vite] Introduction"
+          },
+          "autogenerate": { "directory": "getting-started/introduction" }
+        }
+      ]
+    }
+  ]
+}

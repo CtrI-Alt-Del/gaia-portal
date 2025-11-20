@@ -1,0 +1,57 @@
+---
+title: Visão geral do Gaia
+description: Introdução ao Gaia e a como o ecossistema integra hardware, dados ambientais e educação.
+---
+
+A documentação do Gaia descreve todo o ecossistema de estações ambientais, do datalogger em Arduino até o portal web educacional.
+
+import Grid from "~/components/user-components/Grid.astro";
+import Card from "~/components/user-components/NewCard.astro";
+
+<Grid columns={2}>
+  <Card title="Monitoramento climático em tempo real" icon="rocket" iconColor="#B38CFF" size="sm">
+    Estações coletam chuva, vento, temperatura, umidade e pressão, enviando leituras para a nuvem via MQTT.
+  </Card>
+  <Card title="Portal educacional orientado a projetos" icon="seti:json" iconColor="#7BE1A4" size="sm">
+    O portal transforma dados ambientais em gráficos, relatórios e trilhas de aprendizagem para estudantes e professores.
+  </Card>
+</Grid>
+
+---
+
+## Comece entendendo o problema
+
+Eventos climáticos extremos são cada vez mais frequentes. Muitas escolas ficam sem acesso a dados locais sobre chuva, vento ou variações de temperatura e, por isso, têm dificuldade em discutir risco, prevenção e impacto ambiental de forma prática.
+
+O Gaia nasce para aproximar escolas da realidade da própria região, oferecendo:
+
+- Coleta de dados ambientais com baixo custo
+- Visualização amigável para estudantes
+- Contexto para projetos de investigação científica em sala de aula
+
+## Do sensor ao portal
+
+O fluxo básico do ecossistema Gaia é:
+
+1. Sensores conectados a um Arduino coletam variáveis climáticas.
+2. O datalogger envia os dados para um broker MQTT, como o HiveMQ.
+3. Serviços em NodeJS consomem as mensagens, tratam os dados e salvam em bancos como MongoDB e PostgreSQL.
+4. O Gaia Panel exibe dashboards, relatórios e ferramentas de análise para estudantes e educadores.
+
+## Construído para experimentação e desenvolvimento
+
+O Gaia foi pensado para ser extensível por estudantes e equipes técnicas.
+
+Isso traz vantagens como:
+
+- Controle total sobre o código do datalogger, backend e portal
+- Possibilidade de adicionar novos sensores e camadas de visualização
+- Integração com outras ferramentas de análise de dados
+- Liberdade para adaptar o projeto à realidade de cada escola ou município
+
+## Próximos passos
+
+- Entenda a arquitetura completa na seção de **Introdução ao Gaia Portal**
+- Veja como subir o ambiente local em **Guia rápido**
+- Explore detalhes de hardware e do datalogger na parte de **Hardware e sensores**
+- Avance para integrações e visualização de dados nas seções de **Backend** e **Portal Web**

@@ -1,0 +1,37 @@
+{
+  "name": "dockit-astro",
+  "version": "0.0.2",
+  "description": "DocKit Astro is a simple, modern documentation theme built using Astro and Tailwind CSS",
+  "author": "Themefisher",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.4.2",
+    "@astrojs/starlight": "^0.36.2",
+    "@astrojs/starlight-tailwind": "^4.0.2",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.4.0",
+    "@tailwindcss/vite": "^4.1.16",
+    "astro": "^5.15.3",
+    "astro-embed": "^0.9.1",
+    "astro-font": "^1.1.0",
+    "marked": "^16.4.1",
+    "sharp": "^0.34.4",
+    "three": "^0.181.1",
+    "vite": "^7.1.12"
+  },
+  "devDependencies": {
+    "astro-vtbot": "^2.1.9",
+    "tailwindcss": "^4.1.16",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=24.4.0"
+  }
+}

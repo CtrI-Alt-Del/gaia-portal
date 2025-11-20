@@ -1,0 +1,96 @@
+{
+  "main": [
+    {
+      "name": "Início",
+      "url": "/"
+    },
+    {
+      "name": "Visão geral do Gaia",
+      "url": "/getting-started/introduction/overview/"
+    },
+    {
+      "name": "GitHub",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Gaia Geral",
+          "url": "https://github.com/ctrI-Alt-Del/gaia"
+        },
+        {
+          "name": "Gaia Web",
+          "url": "https://github.com/ctrI-Alt-Del/gaia-web"
+        },
+        {
+          "name": "Gaia Server",
+          "url": "https://github.com/ctrI-Alt-Del/gaia-server"
+        },
+        {
+          "name": "Perfil no GitHub",
+          "url": "https://github.com/ctrI-Alt-Del"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "community": {
+      "title": "Comunidade do Gaia",
+      "links": [
+        {
+          "name": "Perfil no GitHub",
+          "url": "https://github.com/ctrI-Alt-Del"
+        },
+        {
+          "name": "Repositório Gaia Geral",
+          "url": "https://github.com/ctrI-Alt-Del/gaia"
+        },
+        {
+          "name": "Repositório Gaia Web",
+          "url": "https://github.com/ctrI-Alt-Del/gaia-web"
+        },
+        {
+          "name": "Repositório Gaia Server",
+          "url": "https://github.com/ctrI-Alt-Del/gaia-server"
+        }
+      ]
+    },
+    "help_links": {
+      "title": "Links úteis",
+      "links": [
+        {
+          "name": "Visão Geral do Projeto",
+          "url": "/getting-started/introduction/overview/"
+        },
+        {
+          "name": "Entregáveis do Projeto",
+          "url": "/getting-started/introduction/deliverables/"
+        },
+        {
+          "name": "Requisitos do Sistema",
+          "url": "/getting-started/introduction/requirements/"
+        },
+        {
+          "name": "Arquitetura do Sistema",
+          "url": "/getting-started/introduction/architecture/"
+        },
+        {
+          "name": "Modelo de Dados",
+          "url": "/getting-started/introduction/data-model/"
+        }
+      ]
+    },
+    "company": {
+      "title": "Sobre o Projeto",
+      "links": [
+        {
+          "name": "Central de documentação",
+          "url": "/getting-started/introduction/overview/"
+        },
+        {
+          "name": "Sobre o Gaia",
+          "url": "/about"
+        }
+      ]
+    }
+  }
+}

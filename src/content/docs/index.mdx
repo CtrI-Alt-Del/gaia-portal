@@ -1,0 +1,232 @@
+---
+title: Gaia Portal Documentação do ecossistema
+description: Comece a explorar e documentar estações ambientais com o Gaia.
+template: splash
+hero:
+  title: |
+    Dados ambientais
+    <span class="light-text">que viram aprendizado</span>
+  tagline: Descubra como instalar estações Gaia, coletar dados e usar o portal para projetos educacionais.
+---
+
+import Section from "~/components/Section.astro";
+import Card from "~/components/user-components/NewCard.astro";
+import Grid from "~/components/user-components/Grid.astro";
+
+<Section
+  title="O que o ecossistema Gaia <span class='light-text'>entrega na prática</span>"
+  description="Entenda os blocos principais do projeto: estação, backend e portal."
+>
+<Grid columns={4}>
+  <Card title="Monitoramento em tempo real" icon="substack" iconColor="#B38CFF">
+    Estações enviam leituras ambientais via MQTT para serviços em NodeJS, garantindo dados atualizados.
+  </Card>
+
+{" "}
+<Card title="Dados para discutir risco" icon="seti:vite" iconColor="#7BE1A4">
+  Séries históricas de chuva, vento e temperatura permitem identificar padrões e
+  situações críticas.
+</Card>
+
+{" "}
+<Card
+  title="Painel pensado para escolas"
+  icon="seti:code-search"
+  iconColor="#FFD97B"
+>
+  Visualizações e relatórios projetados para apoiar aulas do ensino médio e o
+  trabalho dos professores.
+</Card>
+
+  <Card title="Arquitetura aberta" icon="seti:config" iconColor="#979BFF">
+    Código aberto e modular para personalizar sensores, integrações e modos de visualização.
+  </Card>
+</Grid>
+</Section>
+
+import HeroTabs from "~/components/HeroTabs.astro";
+import HeroTabsItem from "~/components/HeroTabsItem.astro";
+
+<Section
+  title="Entenda o Gaia <span class='light-text'>em 3 etapas</span>"
+  description="Uma visão clara do problema que buscamos resolver, da solução criada e do valor que o ecossistema Gaia entrega."
+>
+  <HeroTabs>
+    <HeroTabsItem
+      title="O desafio"
+      subtitle="A Tecsus precisava de uma solução acessível e validada para monitoramento ambiental com foco educacional."
+      text="A Tecsus buscava expandir sua atuação para o monitoramento ambiental, mas enfrentava limitações de custo, implantação e impacto social. Era necessário um sistema completo que unisse hardware, software, coleta confiável de dados e uma camada educacional capaz de envolver escolas e comunidades. O desafio central era criar um produto escalável, barato, robusto e que também servisse como ferramenta pedagógica para prevenção de desastres."
+      number={1}
+    />
+
+    <HeroTabsItem
+      title="A solução Gaia"
+      subtitle="Um ecossistema completo que integra estações físicas, fluxo de dados via MQTT e um portal web educacional."
+      text="O Gaia foi desenvolvido como um ecossistema end-to-end que começa na estação meteorológica de baixo custo e termina em dashboards e relatórios acessíveis pela Web. O sistema inclui datalogger, fluxo de dados via MQTT, backend para processamento, banco de dados híbrido e um portal educacional que apresenta medições, alertas e análises de forma clara. A solução atende tanto as necessidades técnicas da Tecsus quanto o uso pedagógico em escolas."
+      number={2}
+    />
+
+    <HeroTabsItem
+      title="O que entregamos"
+      subtitle="Monitoramento em tempo real, dashboards, relatórios, alertas, UX educacional e infraestrutura robusta."
+      text="O produto final entrega uma estação meteorológica funcional, um pipeline completo de dados, dashboards interativos, relatórios em PDF, alertas automáticos, CRUDs de entidades e gestão de usuários. O portal conta com design educacional, landing page explicativa e trilhas para atividades PBL. No backend, fornecemos APIs documentadas, processamento de dados, banco relacional e não relacional, além de CI/CD, segurança alinhada à LGPD e infraestrutura confiável para operação contínua."
+      number={3}
+    />
+
+  </HeroTabs>
+</Section>
+
+import ListCard from "~/components/user-components/ListCard.astro";
+import LinkButton from "~/components/LinkButton.astro";
+
+<Section
+  title="Principais tópicos da <span class='light-text'>documentação do Gaia</span>"
+  description="Use estes caminhos como atalho para as partes mais importantes do projeto."
+>
+  <Grid columns={3}>
+    <ListCard title="Hardware e sensores" imageIcon="/src/assets/element.svg" number="4">
+- Escolha de sensores climáticos  
+- Ligações com Arduino e alimentação  
+- Desenvolvimento do datalogger autônomo  
+- Montagem física da estação
+
+<LinkButton href="/getting-started/introduction/deliverables#🛰️-1-hardware-e-coleta-de-dados-a-estação" variant="text" className="mt-6 mb-8 ml-4">
+  Ver detalhes de hardware
+</LinkButton>
+    </ListCard>
+
+    <ListCard title="Backend e integrações" imageIcon="/src/assets/content.svg" number="7">
+
+- Fluxo de mensagens MQTT via HiveMQ
+- Serviços em Node.js com NestJS
+- Persistência em PostgreSQL e MongoDB
+- Jobs de processamento a cada 10 minutos
+
+<LinkButton href="/getting-started/introduction/architecture" variant="text" className="mt-6 mb-8 ml-4">
+  Ver arquitetura do backend
+</LinkButton>
+    </ListCard>
+
+    <ListCard title="Portal Gaia" imageIcon="/src/assets/layouts.svg" number="8">
+
+- Gerenciamento de estações e parâmetros
+- Dashboards interativos de clima
+- Sistema de alarmes e alertas
+- Relatórios de análise de risco
+
+<LinkButton href="/getting-started/introduction/deliverables#🖥️-2-plataforma-web-e-visualização-o-portal" variant="text" className="mt-6 mb-8 ml-4">
+  Ver visão geral do portal
+</LinkButton>
+    </ListCard>
+  </Grid>
+
+  <Grid columns={2}>
+    <ListCard title="Modelo de dados e requisitos" imageIcon="/src/assets/code-block.svg" number="13" >
+- Esquema completo do PostgreSQL  
+- Requisitos funcionais (RF1 a RF13)  
+- Requisitos não funcionais (RNF1 a RNF13)  
+- Relacionamentos entre entidades
+
+<LinkButton
+  href="/getting-started/introduction/data-model"
+  variant="text"
+  className="mt-6 mb-8 ml-4"
+>
+  Ver modelo de dados
+</LinkButton>
+    </ListCard>
+
+    <ListCard title="Ambiente educacional" imageIcon="/src/assets/changelogs.svg" number="5">
+
+- Aprendizado Baseado em Problemas (PBL)
+- Landing page explicativa
+- Engajamento de estudantes do ensino médio
+- Design focado em usabilidade e estética
+
+<LinkButton
+  href="/getting-started/introduction/deliverables#🎓-3-propósito-educacional-e-social"
+  variant="text"
+  className="mt-6 mb-8 ml-4"
+>
+  Ver propósito educacional
+</LinkButton>
+    </ListCard>
+  </Grid>
+</Section>
+
+import ThemeDemo from "~/components/ThemeDemo.astro";
+
+import AccordionContainer from "~/components/AccordionContainer.astro";
+import Accordion from "~/components/Accordion.astro";
+
+<Section
+  title="Perguntas frequentes <span class='light-text'>sobre o Gaia</span>"
+  description="Respostas diretas para as dúvidas mais comuns de quem está começando."
+>
+  <AccordionContainer
+    tabList={[
+      {
+        type: "basic",
+        title: "Começando com o projeto",
+        subtitle: "O que você precisa para instalar a primeira estação.",
+        icon: "rocket",
+      },
+      {
+        type: "setting",
+        title: "Configuração técnica",
+        subtitle: "Backend, MQTT, bancos de dados e portal.",
+        icon: "settings",
+      },
+      {
+        type: "help",
+        title: "Uso em escolas",
+        subtitle: "Sugestões de aplicação em sala de aula.",
+        icon: "support",
+      },
+    ]}
+  >
+    <Accordion
+      question="Preciso de internet na escola para usar o Gaia?"
+      answer="Sim. A estação envia dados para o broker MQTT, que em seguida são consumidos pelo backend. É possível usar rede local ou uma conexão simples de internet, desde que o servidor que roda o backend seja alcançável."
+      type="basic"
+    />
+    <Accordion
+      question="Que tipo de hardware é necessário para começar?"
+      answer="Você precisa de uma placa Arduino compatível com o firmware do datalogger, sensores de chuva, temperatura, umidade e vento, além de uma fonte de alimentação adequada para a estação."
+      type="basic"
+    />
+    <Accordion
+      question="O Gaia é código aberto?"
+      answer="A proposta do projeto é ser aberto e extensível. O código do datalogger, backend e portal pode ser adaptado para a realidade da sua escola ou comunidade."
+      type="basic"
+    />
+
+    <Accordion
+      question="Como configuro o broker MQTT e o backend?"
+      answer="No backend, defina as variáveis de ambiente com a URL do broker, credenciais e bancos de dados. Depois, rode o serviço e verifique se as mensagens da estação estão chegando aos tópicos configurados."
+      type="setting"
+    />
+    <Accordion
+      question="É possível usar somente PostgreSQL ou somente MongoDB?"
+      answer="Sim. A arquitetura foi pensada para ser flexível. Você pode usar apenas um dos bancos, desde que ajuste os serviços que fazem leitura e gravação dos dados."
+      type="setting"
+    />
+    <Accordion
+      question="Como personalizo o visual do portal?"
+      answer="O Gaia Portal é baseado em Astro, Starlight e Tailwind. Você pode alterar cores, tipografia e componentes editando os arquivos de tema e os componentes existentes."
+      type="setting"
+    />
+
+    <Accordion
+      question="Como o Gaia apoia aprendizagem baseada em problemas?"
+      answer="Os dados reais coletados pela estação servem de ponto de partida para investigar questões de clima, risco e território. A documentação inclui exemplos de atividades que podem ser adaptadas para diferentes disciplinas."
+      type="help"
+    />
+    <Accordion
+      question="Quais séries podem usar o Gaia?"
+      answer="O foco principal é o ensino médio, mas o projeto pode ser adaptado para anos finais do fundamental, cursos técnicos e projetos de extensão."
+      type="help"
+    />
+  </AccordionContainer>
+</Section>
+

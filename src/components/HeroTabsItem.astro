@@ -1,0 +1,35 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+  number: number;
+  text?: string;
+  isActive?: boolean;
+}
+
+const {
+  title,
+  subtitle,
+  text,
+  number,
+  isActive = false,
+} = Astro.props;
+---
+
+<div class="hero-tab-item">
+  <div class="hero-tab-nav" data-active={isActive}>
+    <button class="tab-button" data-tab={number}>
+      <span class="tab-number">{number}</span>
+      <div class="tab-content">
+        <h3 class="tab-title">{title}</h3>
+        <p class="tab-subtitle">{subtitle}</p>
+      </div>
+    </button>
+  </div>
+
+  <div class="hero-tab-content" data-panel={number} data-active={isActive}>
+    <!-- <h4 class="tab-panel-title">{title + "asdasda"}</h4> -->
+    <p class="tab-panel-text">{text}</p>
+    <slot />
+  </div>
+</div>
