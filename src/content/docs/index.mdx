@@ -83,68 +83,54 @@ import LinkButton from "~/components/LinkButton.astro";
   title="Principais tópicos da <span class='light-text'>documentação do Gaia</span>"
   description="Use estes caminhos como atalho para as partes mais importantes do projeto."
 >
-  <Grid columns={3}>
-    <ListCard title="Hardware e sensores" imageIcon="/src/assets/element.svg" number="4">
-- Escolha de sensores climáticos  
-- Ligações com Arduino e alimentação  
-- Desenvolvimento do datalogger autônomo  
-- Montagem física da estação
-
-<LinkButton href="/getting-started/introduction/deliverables#🛰️-1-hardware-e-coleta-de-dados-a-estação" variant="text" className="mt-6 mb-8 ml-4">
-  Ver detalhes de hardware
-</LinkButton>
-    </ListCard>
-
-    <ListCard title="Backend e integrações" imageIcon="/src/assets/content.svg" number="7">
-
-- Fluxo de mensagens MQTT via HiveMQ
-- Serviços em Node.js com NestJS
-- Persistência em PostgreSQL e MongoDB
-- Jobs de processamento a cada 10 minutos
-
-<LinkButton href="/getting-started/introduction/architecture" variant="text" className="mt-6 mb-8 ml-4">
-  Ver arquitetura do backend
-</LinkButton>
-    </ListCard>
-
-    <ListCard title="Portal Gaia" imageIcon="/src/assets/layouts.svg" number="8">
-
-- Gerenciamento de estações e parâmetros
-- Dashboards interativos de clima
-- Sistema de alarmes e alertas
-- Relatórios de análise de risco
-
-<LinkButton href="/getting-started/introduction/deliverables#🖥️-2-plataforma-web-e-visualização-o-portal" variant="text" className="mt-6 mb-8 ml-4">
-  Ver visão geral do portal
-</LinkButton>
-    </ListCard>
-  </Grid>
-
-  <Grid columns={2}>
-    <ListCard title="Modelo de dados e requisitos" imageIcon="/src/assets/code-block.svg" number="13" >
-- Esquema completo do PostgreSQL  
-- Requisitos funcionais (RF1 a RF13)  
-- Requisitos não funcionais (RNF1 a RNF13)  
-- Relacionamentos entre entidades
+  <Grid columns={4}>
+    <ListCard title="Visão Geral do Projeto" imageIcon="/src/assets/code-block.svg" >
+- O problema que buscamos resolver  
+- A solução completa do ecossistema Gaia  
+- Como funciona: do sensor ao portal
+- O diferencial do Gaia frente a outras soluções 
 
 <LinkButton
-  href="/getting-started/introduction/data-model"
+  href="/getting-started/introduction/01-visao-geral"
   variant="text"
   className="mt-6 mb-8 ml-4"
 >
-  Ver modelo de dados
+  Ver Visão Geral do Projeto
+</LinkButton>
+    </ListCard>
+
+    <ListCard title="Visão geral Portal Gaia" imageIcon="/src/assets/layouts.svg" number="8">
+
+- Para que serve o portal
+- Seções principais e design educacional
+- Design focado em usabilidade
+- Portal vs Painel Gaia
+
+<LinkButton href="/getting-started/introduction/03-portal/" variant="text" className="mt-6 mb-8 ml-4">
+  Ver visão geral do portal
+</LinkButton>
+    </ListCard>
+
+    <ListCard title="Hardware e sensores" imageIcon="/src/assets/element.svg" number="4">
+- O que é a estação meteorológica
+- Componentes principais 
+- O que é o datalogger
+- Por que funciona?
+
+<LinkButton href="/getting-started/introduction/02-hardware/" variant="text" className="mt-6 mb-8 ml-4">
+  Ver detalhes de hardware
 </LinkButton>
     </ListCard>
 
     <ListCard title="Ambiente educacional" imageIcon="/src/assets/changelogs.svg" number="5">
 
-- Aprendizado Baseado em Problemas (PBL)
-- Landing page explicativa
-- Engajamento de estudantes do ensino médio
-- Design focado em usabilidade e estética
+- A nossa missão educacional
+- Aprendizagem baseada em problemas
+- Engajamento dos estudantes
+- Habilidades desenvolvidas
 
 <LinkButton
-  href="/getting-started/introduction/deliverables#🎓-3-propósito-educacional-e-social"
+  href="/getting-started/introduction/04-proposito-educacional/"
   variant="text"
   className="mt-6 mb-8 ml-4"
 >

@@ -26,7 +26,7 @@ export function CallToAction() {
             Dashboards e relatórios de risco
           </span>
           <span className="rounded-full border border-slate-700 px-5 py-2.5 text-slate-300">
-            Experiência 3D com estações e Arduino
+            Experiência 3D com estações
           </span>
         </div>
       </motion.div>

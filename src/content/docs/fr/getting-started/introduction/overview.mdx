@@ -3,7 +3,7 @@ title: Visão geral do Gaia
 description: Introdução ao Gaia e a como o ecossistema integra hardware, dados ambientais e educação.
 ---
 
-A documentação do Gaia descreve todo o ecossistema de estações ambientais, do datalogger em Arduino até o portal web educacional.
+A documentação do Gaia descreve todo o ecossistema de estações ambientais, do datalogger até o portal web educacional.
 
 import Grid from "~/components/user-components/Grid.astro";
 import Card from "~/components/user-components/NewCard.astro";
@@ -33,7 +33,7 @@ O Gaia nasce para aproximar escolas da realidade da própria região, oferecendo
 
 O fluxo básico do ecossistema Gaia é:
 
-1. Sensores conectados a um Arduino coletam variáveis climáticas.
+1. Sensores coletam variáveis climáticas.
 2. O datalogger envia os dados para um broker MQTT, como o HiveMQ.
 3. Serviços em NodeJS consomem as mensagens, tratam os dados e salvam em bancos como MongoDB e PostgreSQL.
 4. O Gaia Panel exibe dashboards, relatórios e ferramentas de análise para estudantes e educadores.

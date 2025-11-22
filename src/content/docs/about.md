@@ -102,7 +102,7 @@ Os protótipos implementados em ambientes reais (escolas e faculdades) garantem 
 
 #### Hardware e IoT
 - Sensores meteorológicos (DHT22, BMP280, pluviômetro, anemômetro)
-- Microcontroladores Arduino
+- Microcontroladores
 - Protocolo de comunicação MQTT via HiveMQ
 
 #### Backend

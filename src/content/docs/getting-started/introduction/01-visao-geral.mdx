@@ -1,0 +1,105 @@
+---
+title: Visão Geral do Projeto Gaia
+description: O que é o Projeto Gaia e por que ele existe
+---
+
+O Projeto Gaia é um sistema completo de monitoramento climático criado para educação. Conecta estações meteorológicas de baixo custo a um portal web, transformando dados climáticos em aprendizado e alertas de risco.
+
+import Grid from "~/components/user-components/Grid.astro";
+import Card from "~/components/user-components/NewCard.astro";
+
+---
+
+## O Problema
+
+Eventos climáticos extremos são cada vez mais frequentes, mas muitas escolas e comunidades não têm acesso a dados climáticos locais.
+
+**Isso impede:**
+- Compreensão dos padrões do clima da região
+- Ações preventivas baseadas em evidências
+- Engajamento dos estudantes com dados reais
+- Monitoramento efetivo de áreas de risco
+
+---
+
+## A Solução
+
+<Grid columns={2}>
+  <Card title="📡 Estações Acessíveis" icon="rocket" iconColor="#B38CFF" size="sm">
+    Componentes de baixo custo que qualquer escola pode instalar.
+  </Card>
+  <Card title="📊 Dados Visuais" icon="seti:json" iconColor="#7BE1A4" size="sm">
+    Portal transforma números em gráficos e insights compreensíveis.
+  </Card>
+  <Card title="🚨 Alertas Automáticos" icon="seti:config" iconColor="#FFD97B" size="sm">
+    Sistema avisa quando detecta condições de risco.
+  </Card>
+  <Card title="🎓 Ferramenta Educacional" icon="seti:db" iconColor="#979BFF" size="sm">
+    Base para projetos de investigação científica em sala de aula.
+  </Card>
+</Grid>
+
+---
+
+## Como Funciona
+
+**1. Coleta**  
+Sensores medem temperatura, umidade, vento e chuva
+
+**2. Transmissão**  
+Dados vão para a nuvem via internet (MQTT)
+
+**3. Processamento**  
+Sistema trata e organiza as informações
+
+**4. Visualização**  
+Portal e Painel mostram tudo de forma clara
+
+---
+
+## Diferenciais
+
+### Código Aberto
+Todo o código está disponível para adaptar às necessidades de cada comunidade.
+
+### Dados Reais
+Estudantes trabalham com informações do próprio bairro, não simulações.
+
+### Impacto Social
+Vai além da tecnologia - capacita comunidades e desenvolve consciência ambiental.
+
+### Escalável
+Começa com uma estação e pode crescer para uma rede completa.
+
+---
+
+## Para Quem é o Gaia
+
+🏫 **Escolas** - Ferramenta de aprendizagem baseada em problemas  
+🏛️ **Gestores** - Dados para planejar ações preventivas  
+👥 **Comunidades** - Alertas que protegem vidas  
+🔬 **Pesquisadores** - Acesso a dados históricos locais
+
+---
+
+## Explore Mais
+
+<Grid columns={2}>
+  <Card title="Hardware" icon="rocket" iconColor="#B38CFF" size="sm">
+    Conheça a estação meteorológica e seus componentes.
+    
+    [Ver Hardware →](/getting-started/introduction/02-hardware)
+  </Card>
+  <Card title="Portal" icon="document" iconColor="#7BE1A4" size="sm">
+    Descubra a landing page informativa do projeto.
+    
+    [Ver Portal →](/getting-started/introduction/03-portal)
+  </Card>
+  <Card title="Propósito" icon="open-book" iconColor="#FFD97B" size="sm">
+    Entenda o impacto educacional e social.
+    
+    [Ver Propósito →](/getting-started/introduction/04-proposito-educacional)
+  </Card>
+</Grid>
+
+---
