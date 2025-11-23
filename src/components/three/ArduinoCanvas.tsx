@@ -122,14 +122,14 @@ export function ArduinoCanvas({ debug = false }: ArduinoCanvasProps) {
       </Canvas>
 
       {/* bottom overlay: show selected part info or default help */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 p-3 text-sm text-center text-slate-700 bg-transparent">
+      <div className="pointer-events-none absolute text-sm text-slate-500 dark:text-white pointer-events-auto inset-x-0 bottom-0 p-3 text-sm text-center text-slate-700 bg-transparent">
         {selectedPart ? (
           <div className="flex flex-col items-center gap-1">
             <div className="font-semibold">{hoverTargets[selectedPart]?.title ?? selectedPart}</div>
             <div className="text-xs">{hoverTargets[selectedPart]?.description ?? ''}</div>
           </div>
         ) : (
-          <div>Passe o mouse ou toque na placa para interagir. Use zoom para aproximar.</div>
+          <div className="text-sm text-slate-500 dark:text-white pointer-events-auto">Passe o mouse ou toque na placa para interagir. Use zoom para aproximar.</div>
         )}
       </div>
     </div>
